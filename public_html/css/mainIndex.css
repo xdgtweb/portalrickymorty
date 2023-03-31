@@ -136,7 +136,7 @@ body #contenido main #cajaBrillo
 #main label:nth-child(3)
 {
     position: relative;
-    top: -505px;
+    top: -555px;
     left: 0%;
     font-family: "letra";
     font-size: 30px;
@@ -234,6 +234,7 @@ body #contenido main #cajaBrillo
         margin-right: auto;
         transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
     }
+
 }
 
 @media only screen and (max-width: 720px)
@@ -265,14 +266,35 @@ body #contenido main #cajaBrillo
         margin-right: auto;
         transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
     }
+
+    #main .parcheVerde:nth-last-child(1)
+    {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background-color: #b5dc36;
+        top: 165px;
+        z-index: 0;
+    }
+
+    #main .parcheVerde:nth-last-child(2)
+    {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background-color: #b5dc36;
+        top: 165px;
+        right: 0px;
+        z-index: 0;
+    }
 }
 
 @media only screen and (max-width: 720px)
 {
     body #contenido
     {
-        padding-left: 30px; /* desplaza el main */
-        padding-right: 30px;
+        padding-left: 10px; /* desplaza el main */
+        padding-right: 10px;
         padding-top: 80px;
         padding-bottom: 40px;
     }
@@ -307,6 +329,27 @@ body #contenido main #cajaBrillo
         margin-left: auto;
         margin-right: auto;
         transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+    }
+    
+    #main .parcheVerde:nth-last-child(1)
+    {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background-color: #b5dc36;
+        top: 115px;
+        z-index: 0;
+    }
+
+    #main .parcheVerde:nth-last-child(2)
+    {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background-color: #b5dc36;
+        top: 115px;
+        right: 0px;
+        z-index: 0;
     }
 }
 

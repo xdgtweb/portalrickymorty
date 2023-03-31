@@ -606,7 +606,11 @@ body .barraFooter footer a:nth-child(3)
 
         position: relative;
         top: 0px;
-        border: red 3px solid;
+        border: #b5dc36 4px solid;
+        border-radius: 10px;
+        background-image: url("../imagenes/navFooter/rick-and-morty-rick.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
         width: 40px;
         height: 40px;
         transition: 0.2s;
@@ -615,7 +619,13 @@ body .barraFooter footer a:nth-child(3)
 
     body .barraNav .centrado nav:hover
     {
-        border: red 3px solid;
+        border: #b5dc36 5px solid;
+        border-radius: 10px;
+        background-color: transparent;
+        background-image: none;
+        height: 300px;
+        width: 500px;
+        backdrop-filter: blur(10px);
         position: absolute;
         margin-left: auto;
         margin-right: auto;
@@ -630,12 +640,12 @@ body .barraFooter footer a:nth-child(3)
 
     body .barraNav .centrado nav .boton
     {
-        visibility: hidden;
+        display: none;
     }
 
     body .barraNav .centrado nav:hover .boton
     {
-        visibility: visible;
+        display: inline-block;
         transition: 0.2s;
     }
 
@@ -685,7 +695,7 @@ body .barraFooter footer a:nth-child(3)
         top: 6px;
         left: -150px;
     }
-    
+
     body .barraNav .centrado
     {
         border: blue 0px solid;
@@ -740,7 +750,7 @@ body .barraFooter footer a:nth-child(3)
         content: "";
         width: 64px;
         height: 34px;
-        background-color: transparent;
+        ground-color: transparent;
         border: 2px transparent solid;
         border-radius: 30px;
         z-index: 9;
