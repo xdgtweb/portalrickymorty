@@ -1,0 +1,323 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 6 oct 2022, 17:10:06
+    Author     : xxxdd
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#beta
+{
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#beta div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 90%;
+    font-family: "letra";
+    font-size: 30px;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+#beta div a
+{
+    font-size: 30px;
+    pointer-events: auto;
+}
+
+body #contenido
+{
+    /*    border: blueviolet 3px solid;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 235px; /* desplaza el main */
+    padding-top: 15px; /* margenes visuales */
+    padding-bottom: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+body #contenido main::-webkit-scrollbar
+{
+    display: none;
+}
+
+body #contenido main
+{
+    display: inline-flex;
+    border-bottom: #b5dc36 10px solid;
+    border-top: #b5dc36 10px solid;
+    border-left: #b5dc36 5px solid;
+    border-right: #b5dc36 5px solid;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+body #contenido main::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+body #contenido main #cajaBrillo
+{
+    width: 100%;
+    height: 5000px;
+    background-color: #80dae6;
+    z-index: 0;
+}
+
+#header
+{
+    position: relative;
+    top: 10px;
+}
+
+#main #tanqueAcido
+{
+    z-index: 1
+}
+
+#main #tanqueAcido label
+{
+    color: #01a3b8;
+    text-align: center;
+    font-family: "rickymorty";
+    font-size: 35px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.01px #b5dc36;
+}
+
+#main
+{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+
+#main label
+{
+    width: 70%;
+}
+
+#main .derretido:nth-child(2)
+{
+    background-image: url(../imagenes/main/Index/derretido.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: -20px;
+}
+
+#main label:nth-child(3)
+{
+    position: relative;
+    top: -505px;
+    left: 0%;
+    font-family: "letra";
+    font-size: 30px;
+    text-align: justify;
+}
+
+#main .parcheVerde:nth-last-child(1)
+{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: #b5dc36;
+    top: 365px;
+    z-index: 0;
+}
+
+#main .parcheVerde:nth-last-child(2)
+{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: #b5dc36;
+    top: 365px;
+    right: 0px;
+    z-index: 0;
+}
+
+#tanqueAcido
+{
+    background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px 20px 30px 30px;
+    border-bottom: 10px #b5dc36 solid;
+    position: relative;
+    top: -20px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#rickymortiCallendo {
+    background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+#rickymortiCallendo.loaded {
+    transform: scale(0.001);
+    opacity: 0;
+}
+
+
+
+@media only screen and (max-width: 1280px)
+{
+
+
+
+}
+
+@media only screen and (max-width: 1080px)
+{
+    body #contenido
+    {
+        padding-left: 80px; /* desplaza el main */
+        padding-right: 80px;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px)
+{
+    #rickymortiCallendo
+    {
+        background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 590px;
+        height: 360px;
+        margin: 0 auto;
+        position: relative;
+        top: -60px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 720px)
+{
+    #tanqueAcido
+    {
+        background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: -20px;
+        transition: background-image 0.5s ease-in-out;
+    }
+
+    #rickymortiCallendo
+    {
+        background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 460px;
+        height: 280px;
+        margin: 0 auto;
+        position: relative;
+        top: -90px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 720px)
+{
+    body #contenido
+    {
+        padding-left: 30px; /* desplaza el main */
+        padding-right: 30px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 430px)
+{
+    #tanqueAcido
+    {
+        background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        width: 100%;
+        height: 150px;
+        position: relative;
+        top: -20px;
+        transition: background-image 0.5s ease-in-out;
+    }
+
+    #rickymortiCallendo
+    {
+        background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 190px;
+        margin: 0 auto;
+        position: relative;
+        top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+    }
+}
+
+@font-face
+{
+    font-family: 'rickymorty';
+    src: url('../TiposDeLetra/get_schwifty.ttf');
+}
+
+@font-face
+{
+    font-family: 'letra';
+    src: url('../TiposDeLetra/CodersCrux.otf');
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roboticos - Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="estilo" rel="stylesheet" href="../css/estiloClaro.css"/>
+        <link rel="icon" type="image/png" href="../imagenes/barraNavegacion/logoCabecera.png">
+    </head>
+    <body id="body">
+        <div id="beta">
+            <div>Versión Beta (No Terminado) ¿Se te ocurre alguna idea de lo que quieres que haya?; mandame un mensaje por <a id="beta" href="https://wa.me/635663177?text=Me&gustaria&que&añadieras: " target="_blank">WhatsApp</a></div>
+        </div>
+        <div class="barraNav">
+            <header>
+                <img id="logo" alt="logoCabecera"/>
+                <img id="rickymorty" alt="rickymorty"/>
+                <img id="letraTitulo" alt="letraTitulo"/>
+                <div class="oculto"></div>
+            </header>
+            <div class="centrado">
+                <nav>
+                    <!-- <img src="../imagenes/barraNavegacion/personaBlanco.png" alt="persona"/> -->
+                    <a class="boton" href="inicio.html">
+                        <div id="imgH3">
+                            <img id="casa" alt="casaClaro"/>
+                            <h3 class="letraNav">Inicio</h3>
+                        </div>
+                    </a>
+                    <a class="boton" href="productos.html">
+
+                        <div id="imgH3">
+                            <img id="productos" alt="productosClaro"/>
+                            <h3 class="letraNav">Temporadas</h3>
+                        </div>
+                    </a>
+                    <a class="boton" href="detalles.html">
+                        <div id="imgH3">
+                            <img id="detalles" alt="detallesClaro"/>
+                            <h3 class="letraNav">Teorias</h3>
+                        </div>
+                    </a>
+                    <a class="boton" href="contacto.html">
+                        <div id="imgH3">
+                            <img id="contacto" alt="contactoClaro"/>
+                            <h3 class="letraNav">Detalles</h3>
+                        </div>
+                    </a>
+
+
+
+                </nav>
+            </div>
+
+        </div>
+        <div id="contenido">
+            <main>
+                <div id="cajaBrillo">
+
+                    <div class="interior">
+
+                        <div id="header">
+
+                            <label>Index</label>
+                        </div>
+
+                        <div id="main">
+
+                            <div id="tanqueAcido">
+                                <label>Index</label>
+                                <div id="rickymortiCallendo"></div>
+                            </div>
+                            <div class="derretido"></div>
+                            <label>Página web no oficial de Rick y Morty</label>
+                            <div class="parcheVerde"></div>
+                            <div class="parcheVerde"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main> 
+
+        </div>
+
+        <div class="barraFooter">
+
+            <footer>
+
+                <a href="#">
+                    <div id="img">
+                        <img id="intagram" alt="contactoClaro"/>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div id="img">
+                        <img id="twitter" alt="contactoClaro"/>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div id="img">
+                        <img id="facebook" alt="contactoClaro"/>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div id="img">
+                        <img id="youtube" alt="contactoClaro"/>
+                    </div>
+                </a>
+
+                <h4 class="letraFooter">
+                    Dirección oficial:<br>
+                    Av. Mi Proyecto, Nº11 sobre 10<br><br>
+
+                    Aviso Legal<br>Política de Privacidad<br>Política de Cookies
+                </h4>
+
+            </footer>
+
+            <div id="modos">
+
+
+                <div id="fondoCheck">
+
+                    <div id="imgOscCla"></div>
+
+                    <div id="bola"></div>
+
+                </div>
+
+                <input id="checkBoxModo" type="checkbox" name="modo" value="ON" />
+
+            </div>
+
+            <input id="rango" type="range" min="50" max="100" value="100" >
+
+        </div>
+        <script src="../js/modos.js"></script>
+        <script src="../js/brillo.js"></script>
+        <script>
+
+            window.onload = function () {
+                var rickymortiCallendo = document.getElementById("rickymortiCallendo");
+                var tanqueAcido = document.getElementById("tanqueAcido");
+                rickymortiCallendo.classList.add("loaded");
+
+                // Precargar las imágenes
+                var preloadedImages = [];
+
+                function preloadImage(url) {
+                    var img = new Image();
+                    img.src = url;
+                    preloadedImages.push(img);
+                }
+
+                preloadImage("../imagenes/main/Index/tanqueDeAcidoSalpicando.png");
+                preloadImage("../imagenes/main/Index/tanqueDeAcido.png");
+                preloadImage("../imagenes/main/Index/tanqueDeAcidoHuesos.png");
+                preloadImage("../imagenes/main/Index/rickymortyeneltanquedeacido.png");
+
+                // Ocultar el elemento div de pre-carga de imágenes
+                var preloaderDiv = document.createElement("div");
+                preloaderDiv.style.cssText = "background-image: url('" + preloadedImages[0].src + "'); display: none;";
+                document.body.appendChild(preloaderDiv);
+
+                // Función para ajustar la opacidad en función de la escala actual
+                function adjustOpacity() {
+                    var scale = rickymortiCallendo.style.transform.match(/scale\((.*?)\)/)[1];
+                    var opacity = scale * 0.5; // La opacidad se reduce a la mitad de la escala actual
+                    rickymortiCallendo.style.opacity = opacity;
+                }
+
+                // Agregar evento de transición para ajustar la opacidad cuando cambie la escala
+                rickymortiCallendo.addEventListener("transitionend", adjustOpacity);
+                rickymortiCallendo.addEventListener("webkitTransitionEnd", adjustOpacity);
+                rickymortiCallendo.addEventListener("mozTransitionEnd", adjustOpacity);
+                rickymortiCallendo.addEventListener("msTransitionEnd", adjustOpacity);
+
+                // Cambiar el fondo después de 0.5 segundos
+                setTimeout(function () {
+                    tanqueAcido.style.backgroundImage = "url('" + preloadedImages[0].src + "')";
+                }, 1000);
+
+                // Cambiar el fondo después de 2 segundos
+                setTimeout(function () {
+                    tanqueAcido.style.backgroundImage = "url('" + preloadedImages[1].src + "')";
+                }, 2000);
+
+                // Cambiar el fondo después de 2 segundos
+                setTimeout(function () {
+                    tanqueAcido.style.backgroundImage = "url('" + preloadedImages[2].src + "')";
+                }, 3300);
+
+                // Cambiar el fondo después de 2 segundos
+                setTimeout(function () {
+                    tanqueAcido.style.backgroundImage = "url('" + preloadedImages[3].src + "')";
+                }, 60000);
+            };
+        </script>
+
+    </body>
+</html>
