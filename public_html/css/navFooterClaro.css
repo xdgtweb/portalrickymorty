@@ -639,18 +639,14 @@ body .barraFooter footer a:nth-child(3)
     }
 
     body .barraNav .centrado nav .boton {
-        max-height: 0;
+        height: 0;
         overflow: hidden;
-        transition: max-height 1s;
+        transition: height 0s;
     }
 
     body .barraNav .centrado nav:hover .boton {
-        max-height: 100px; /* ajusta el valor a la altura máxima del botón */
-        transition: max-height 1s;
-    }
-
-    body .barraNav .centrado nav .boton:not([style*="opacity: 0"]) {
-        pointer-events: auto;
+        height: 50px;
+        transition: height 1s;
     }
 
 
