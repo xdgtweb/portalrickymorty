@@ -638,16 +638,21 @@ body .barraFooter footer a:nth-child(3)
         transition: 0.2s;
     }
 
-    body .barraNav .centrado nav .boton
-    {
-        display: none;
+    body .barraNav .centrado nav .boton {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
     }
 
-    body .barraNav .centrado nav:hover .boton
-    {
-        display: inline-block;
-        transition: 0.2s;
+    body .barraNav .centrado nav:hover .boton {
+        max-height: 100px; /* ajusta el valor a la altura máxima del botón */
+        transition: max-height 1s;
     }
+
+    body .barraNav .centrado nav .boton:not([style*="opacity: 0"]) {
+        pointer-events: auto;
+    }
+
 
     body .barraFooter
     {
