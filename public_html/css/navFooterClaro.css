@@ -603,9 +603,8 @@ body .barraFooter footer a:nth-child(3)
         padding-left: 0px;
         padding-right: 0px;
         border-radius: 0px;
-
         position: relative;
-        top: 0px;
+        top: 70px;
         border: #b5dc36 4px solid;
         border-radius: 10px;
         background-image: url("../imagenes/navFooter/rick-and-morty-rick.gif");
@@ -631,7 +630,7 @@ body .barraFooter footer a:nth-child(3)
         justify-content: center; /* Alineación horizontal en el centro */
         width: 200px;
         height: 250px;
-        top: -190px;
+        top: -145px;
         left: 25%;
         right: 25%;
         transition: 0.2s;
