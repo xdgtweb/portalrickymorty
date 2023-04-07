@@ -13,14 +13,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     padding: 0;
 }
 
-#beta
-{
-    margin-left: auto;
-    margin-right: auto;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-}
-
 #beta div
 {
     position: absolute;
@@ -33,12 +25,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     font-size: 30px;
     pointer-events: none;
     z-index: 99999;
-}
-
-#beta div a
-{
-    font-size: 30px;
-    pointer-events: auto;
 }
 
 body #contenido
@@ -117,11 +103,6 @@ body #contenido main #cajaBrillo
     width: 100%;
 }
 
-#main label
-{
-    width: 70%;
-}
-
 #main .derretido:nth-child(2)
 {
     background-image: url(../imagenes/main/Index/derretido.png);
@@ -131,16 +112,6 @@ body #contenido main #cajaBrillo
     height: 80vh;
     position: relative;
     top: -20px;
-}
-
-#main label:nth-child(3)
-{
-    position: relative;
-    top: -555px;
-    left: 0%;
-    font-family: "letra";
-    font-size: 30px;
-    text-align: justify;
 }
 
 #main .parcheVerde:nth-last-child(1)
@@ -351,16 +322,4 @@ body #contenido main #cajaBrillo
         right: 0px;
         z-index: 0;
     }
-}
-
-@font-face
-{
-    font-family: 'rickymorty';
-    src: url('../TiposDeLetra/get_schwifty.ttf');
-}
-
-@font-face
-{
-    font-family: 'letra';
-    src: url('../TiposDeLetra/CodersCrux.otf');
 }

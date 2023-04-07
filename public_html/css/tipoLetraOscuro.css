@@ -7,141 +7,72 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : xxxdd
 */
 
-#letraTitulo
+#beta
 {
-    font-family: titulo;
-    font-size: 30px;
-    font-weight: lighter;
-    margin-left: 5px;
-    justify-content: center;
-    align-content: center;
-    letter-spacing: 0;
-    background: url(../imagenes/navFooter/fondoTituloTransicionOscuro.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 50s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
-.letraNav
-{
-    color: black;
-    font-family: nav;
-    font-size: 20px;
-    letter-spacing: 3px;
-}
-
-.letraFooter
-{
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    color: black;
-    font-family: footer;
-    position: absolute;
-    top: 50px;
-    left: 15px;
-}
-
-.tipoLetraMain
+#beta div a
 {
     font-size: 30px;
-    letter-spacing: 1.5px;
-    color: white;
-    font-family: titulo;
-    margin-top: 20px;
-    border: red 1px solid;
+    pointer-events: auto;
 }
 
-
-@font-face 
+#main label
 {
-    font-family: titulo;
-    font-style: normal;
-    font-weight: normal;
-    src: url(../TiposDeLetra/GiantRobotArmy-Medium.ttf);
+    width: 70%;
 }
 
-@font-face 
+#main label:nth-child(3)
 {
-    font-family: nav;
-    font-style: normal;
-    font-weight: normal;
-    src: url(../TiposDeLetra/MADEOkineSansPERSONALUSE-Light.otf);
+    position: relative;
+    top: -555px;
+    left: 0%;
+    font-family: "letra";
+    font-size: 30px;
+    text-align: justify;
 }
-
-@font-face 
-{
-    font-family: footer;
-    font-style: normal;
-    font-weight: normal;
-    src: url(../TiposDeLetra/made_okine_sans/MADEOkineSansPERSONALUSE-Light.otf);
-}
-
 
 @media only screen and (max-width: 1080px)
 {
-    
-    #letraTitulo
-    {
-        position: absolute;
-        top: 61px;
-        right: 4px;
-        font-family: titulo;
-        font-size: 15px;
-        font-weight: lighter;
-        margin-left: 0px;
-        margin-top: 0px;
-        justify-content: center;
-        align-content: center;
-        letter-spacing: 0;
-        background: url() repeat-y;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: aitf 50s linear infinite;
-        -webkit-transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
-        background-color: black;
-    }
-    
-    .letraFooter
-    {
-        display: none;
-        width: 55px;
-        font-size: 10px;
-        letter-spacing: 1.5px;
-        color: black;
-        font-family: footer;
-        position: absolute;
-        top: 195px;
-        left: 9px;
-    }
-    
-    .tipoLetraMain
-    {
-        font-size: 25px;
-    }
-    
+
+
+
 
 }
 
 @media only screen and (max-width: 720px)
 {
-    .tipoLetraMain
+
+    nav .barraFooter footer h4
     {
-        font-size: 15px;
+        position: absolute;
+        font-family: 'letra';
+        font-size: 0px;
+        color: black;
     }
+
+    nav:hover .barraFooter footer h4
+    {
+        font-family: 'letra';
+        font-size: 20px;
+        color: black;
+    }
+
 }
 
-@media only screen and (max-width: 570px)
-{
 
+@font-face
+{
+    font-family: 'rickymorty';
+    src: url('../TiposDeLetra/get_schwifty.ttf');
 }
 
-@media only screen and (max-width: 590px)
+@font-face
 {
-
+    font-family: 'letra';
+    src: url('../TiposDeLetra/CodersCrux.otf');
 }
