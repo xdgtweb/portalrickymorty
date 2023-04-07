@@ -47,7 +47,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @media only screen and (max-width: 720px)
 {
 
-    nav .barraFooter footer h4
+    nav .barraFooter footer .letraFooter
     {
         position: absolute;
         font-family: 'letra';
@@ -55,15 +55,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
         color: black;
     }
 
-    nav:hover .barraFooter footer h4
+    nav:hover .barraFooter footer .letraFooter
     {
         font-family: 'letra';
-        font-size: 20px;
+        font-size: 15px;
         color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: anima2 0.3s steps(20) forwards;
+        position: absolute;
+        top: 105px;
+        text-align: left;
     }
 
-}
 
+}
 
 @font-face
 {
@@ -75,4 +81,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 {
     font-family: 'letra';
     src: url('../TiposDeLetra/CodersCrux.otf');
+}
+
+@keyframes anima2 {
+  from {
+    left: -75px;
+  }
+  to {
+    left: -98px;
+  }
 }
