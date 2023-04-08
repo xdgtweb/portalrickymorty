@@ -36,6 +36,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     text-align: justify;
 }
 
+nav .barraFooter footer .letraFooter
+{
+    font-family: 'letra';
+    font-size: 18px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    right: auto;
+    left: 20px;
+    text-align: left;
+}
+
 @media only screen and (max-width: 1080px)
 {
 
@@ -62,6 +76,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
         color: black;
         white-space: nowrap;
         overflow: hidden;
+        display: block;
+        bottom: auto;
         animation: anima2 0.3s steps(20) forwards;
         position: absolute;
         top: 105px;
@@ -84,10 +100,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 }
 
 @keyframes anima2 {
-  from {
-    left: -75px;
-  }
-  to {
-    left: -98px;
-  }
+    from {
+        left: -75px;
+    }
+    to {
+        left: -98px;
+    }
 }

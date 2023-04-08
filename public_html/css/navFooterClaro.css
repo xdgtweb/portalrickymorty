@@ -305,8 +305,10 @@ body .barra .centrado nav img
     border-radius: 30px;
     z-index: 9;
     position: absolute;
-    left: 85px;
-    top: 385px;
+    bottom: auto;
+    right: auto;
+    left: 40px;
+    top: 300px;
 }
 
 .barraFooter #modos #fondoCheck
@@ -314,12 +316,14 @@ body .barra .centrado nav img
     content: "";
     width: 60px;
     height: 30px;
-    position: absolute;
     background-color: transparent;
     border-radius: 30px;
     border: 3px #b5dc36 solid;
-    left: 85px;
-    top: 385px
+    position: fixed;
+    bottom: auto;
+    right: auto;
+    left: 90px;
+    top: 450px;
 }
 
 .barraFooter #modos #bola
@@ -350,9 +354,11 @@ body .barra .centrado nav img
 
 .barraFooter #rango
 {
-    position: relative;
-    top: 430px;
-    right: -45px;
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    left: 45px;
+    top: 250px;
     background: black;
     width: 150px;
     transform: rotate(0deg);
