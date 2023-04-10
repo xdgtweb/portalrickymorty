@@ -40,11 +40,6 @@ body #contenido
     box-sizing: border-box;
 }
 
-body #contenido main::-webkit-scrollbar
-{
-    display: none;
-}
-
 body #contenido main
 {
     display: inline-flex;
@@ -69,9 +64,25 @@ body #contenido main::-webkit-scrollbar
 body #contenido main #cajaBrillo
 {
     width: 100%;
-    height: 5000px;
+    height: 1100px;
     background-color: #80dae6;
     z-index: 0;
+}
+
+.contenedor {
+    background-color: #ddd;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.progreso {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    transition: width 0.1s ease-in-out;
 }
 
 #header
@@ -112,25 +123,27 @@ body #contenido main #cajaBrillo
     height: 80vh;
     position: relative;
     top: -20px;
+    z-index: 9;
+    pointer-events: none;
 }
 
-#main .parcheVerde:nth-last-child(1)
+#main .parcheVerde:nth-last-child(3)
 {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     position: absolute;
     background-color: #b5dc36;
-    top: 365px;
+    top: 315px;
     z-index: 0;
 }
 
-#main .parcheVerde:nth-last-child(2)
+#main .parcheVerde:nth-last-child(4)
 {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     position: absolute;
     background-color: #b5dc36;
-    top: 365px;
+    top: 315px;
     right: 0px;
     z-index: 0;
 }
@@ -169,6 +182,156 @@ body #contenido main #cajaBrillo
     opacity: 0;
 }
 
+.centradoMain:nth-child(6)
+{
+    display: inline-flex;
+    position: absolute;
+    top: 570px;
+    transform: translateX(-50%);
+}
+.centradoMain:nth-child(7)
+{
+    display: inline-flex;
+    position: absolute;
+    top: 805px;
+    transform: translateX(-50%);
+}
+
+.botonMain
+{
+    width: 150px;
+    height: 200px;
+    background-color: #cbfffa;
+    border-radius: 20px;
+    z-index: 8;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.botonMain h3
+{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "letra";
+    font-size: 25px;
+    color: black;
+}
+
+.centradoMain:nth-child(6) .botonMain:nth-child(1) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/merchandising.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(6) .botonMain:nth-child(2) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/librosArte.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(6) .botonMain:nth-child(3) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/comics.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(6) .botonMain:nth-child(4) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/fondosPantalla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(7) .botonMain:nth-child(1) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/adultswim.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(7) .botonMain:nth-child(2) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/OtrasSeries.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(7) .botonMain:nth-child(3) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/webDanHarmon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centradoMain:nth-child(7) .botonMain:nth-child(4) .imgMain
+{
+    position: relative;
+    top: 5px;
+    width: 140px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url("../imagenes/main/Index/webJustinRoiland.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 @media only screen and (max-width: 1280px)
@@ -186,30 +349,6 @@ body #contenido main #cajaBrillo
         padding-right: 80px;
     }
 
-
-}
-
-@media only screen and (max-width: 900px)
-{
-    #rickymortiCallendo
-    {
-        background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 590px;
-        height: 360px;
-        margin: 0 auto;
-        position: relative;
-        top: -60px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
-    }
-
-}
-
-@media only screen and (max-width: 720px)
-{
     #tanqueAcido
     {
         background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
@@ -217,109 +356,384 @@ body #contenido main #cajaBrillo
         background-repeat: no-repeat;
         background-position: 50% center;
         width: 100%;
-        height: 200px;
+        height: 350px;
         position: relative;
         top: -20px;
         transition: background-image 0.5s ease-in-out;
     }
 
-    #rickymortiCallendo
+    .centradoMain:nth-child(6)
     {
-        background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 460px;
-        height: 280px;
-        margin: 0 auto;
-        position: relative;
-        top: -90px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
-    }
-
-    #main .parcheVerde:nth-last-child(1)
-    {
-        width: 25px;
-        height: 25px;
+        display: inline-flex;
         position: absolute;
-        background-color: #b5dc36;
-        top: 165px;
-        z-index: 0;
+        top: 480px;
+        transform: translateX(-50%);
     }
-
-    #main .parcheVerde:nth-last-child(2)
+    .centradoMain:nth-child(7)
     {
-        width: 25px;
-        height: 25px;
+        display: inline-flex;
         position: absolute;
-        background-color: #b5dc36;
-        top: 165px;
-        right: 0px;
-        z-index: 0;
-    }
-}
-
-@media only screen and (max-width: 720px)
-{
-    body #contenido
-    {
-        padding-left: 10px; /* desplaza el main */
-        padding-right: 10px;
-        padding-top: 80px;
-        padding-bottom: 10px;
+        top: 715px;
+        transform: translateX(-50%);
     }
 
-}
-
-@media only screen and (max-width: 430px)
-{
-    #tanqueAcido
+    body #contenido main #cajaBrillo
     {
-        background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% center;
         width: 100%;
-        height: 150px;
-        position: relative;
-        top: -20px;
-        transition: background-image 0.5s ease-in-out;
+        height: 1000px;
+        background-color: #80dae6;
+        z-index: 0;
     }
 
-    #rickymortiCallendo
+    #main label:nth-child(3)
     {
-        background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 320px;
-        height: 190px;
-        margin: 0 auto;
-        position: relative;
-        top: -50px;
+        display: block;
+        position: absolute;
+        top: 340px;
         margin-left: auto;
         margin-right: auto;
-        transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
-    }
-    
-    #main .parcheVerde:nth-last-child(1)
-    {
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        background-color: #b5dc36;
-        top: 115px;
-        z-index: 0;
+        font-family: "letra";
+        font-size: 40px;
+        z-index: 99;
+
     }
 
-    #main .parcheVerde:nth-last-child(2)
+    @media only screen and (max-width: 900px)
     {
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        background-color: #b5dc36;
-        top: 115px;
-        right: 0px;
-        z-index: 0;
+        #rickymortiCallendo
+        {
+            background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 590px;
+            height: 360px;
+            margin: 0 auto;
+            position: relative;
+            top: -60px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+        }
+
+        #tanqueAcido
+        {
+            background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% center;
+            width: 100%;
+            height: 280px;
+            position: relative;
+            top: -20px;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        #main .parcheVerde:nth-last-child(3)
+            {
+            width: 27px;
+            height: 27px;
+            position: absolute;
+            background-color: #b5dc36;
+            top: 245px;
+            z-index: 0;
+        }
+
+        #main .parcheVerde:nth-last-child(4)
+            {
+            width: 27px;
+            height: 27px;
+            position: absolute;
+            background-color: #b5dc36;
+            top: 245px;
+            right: 0px;
+            z-index: 0;
+        }
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 900px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+        #main label:nth-child(3)
+            {
+            display: block;
+            position: absolute;
+            top: 270px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: "letra";
+            font-size: 40px;
+            z-index: 99;
+
+        }
+
+    }
+
+    @media only screen and (max-width: 720px)
+    {
+        #tanqueAcido
+        {
+            background-image: url(../imagenes/main/Index/tanqueDeAcido.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% center;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            top: -20px;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        #rickymortiCallendo
+        {
+            background-image: url(../imagenes/main/Index/RickYmortyCallendo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 460px;
+            height: 280px;
+            margin: 0 auto;
+            position: relative;
+            top: -90px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+        }
+
+        #main .parcheVerde:nth-last-child(3)
+            {
+            position: absolute;
+            background-color: #b5dc36;
+            top: 265px;
+            z-index: 0;
+        }
+
+        #main .parcheVerde:nth-last-child(4)
+            {
+            position: absolute;
+            background-color: #b5dc36;
+            top: 265px;
+            right: 0px;
+            z-index: 0;
+        }
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 900px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+        #main label:nth-child(3)
+            {
+            display: block;
+            position: absolute;
+            top: 290px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: "letra";
+            font-size: 40px;
+            z-index: 99;
+        }
+    }
+
+    @media only screen and (max-width: 895px)
+    {
+
+        .centradoMain:nth-child(6)
+            {
+            display: inline-flex;
+            position: absolute;
+            top: 370px;
+            transform: translateX(-50%);
+        }
+
+        .centradoMain:nth-child(7)
+            {
+            display: inline-flex;
+            position: absolute;
+            top: 555px;
+            transform: translateX(-50%);
+        }
+
+        .botonMain
+        {
+            width: 120px;
+            height: 160px;
+            background-color: #cbfffa;
+            border-radius: 20px;
+            z-index: 8;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .botonMain h3
+        {
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            transform: translateX(-50%);
+            margin-left: auto;
+            margin-right: auto;
+            font-family: "letra";
+            font-size: 20px;
+            color: black;
+        }
+
+        .centradoMain:nth-child(6) .botonMain:nth-child(1) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 127px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/merchandising.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(6) .botonMain:nth-child(2) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 127px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/librosArte.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(6) .botonMain:nth-child(3) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 127px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/comics.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(6) .botonMain:nth-child(4) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 117px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/fondosPantalla.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(7) .botonMain:nth-child(1) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 127px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/adultswim.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(7) .botonMain:nth-child(2) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 127px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/OtrasSeries.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(7) .botonMain:nth-child(3) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 127px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/webDanHarmon.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .centradoMain:nth-child(7) .botonMain:nth-child(4) .imgMain
+            {
+            position: relative;
+            top: 5px;
+            width: 110px;
+            height: 117px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background-image: url("../imagenes/main/Index/webJustinRoiland.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+    @media only screen and (max-width: 720px)
+    {
+        body #contenido
+        {
+            padding-left: 10px; /* desplaza el main */
+            padding-right: 10px;
+            padding-top: 80px;
+            padding-bottom: 10px;
+        }
+
+        .centradoMain:nth-child(6)
+            {
+            display: inline-flex;
+            position: absolute;
+            top: 370px;
+            transform: translateX(-50%);
+        }
+
+        .centradoMain:nth-child(7)
+            {
+            display: inline-flex;
+            position: absolute;
+            top: 555px;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    @media only screen and (max-width: 580px)
+    {
+
+        #main label:nth-child(3)
+        {
+
+            font-size: 30px;
+
+        }
+
     }
 }

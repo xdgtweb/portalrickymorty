@@ -23,21 +23,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 
 #main label
 {
-    width: 70%;
+    width: 100%;
 }
 
 #main label:nth-child(3)
 {
-    position: relative;
-    top: -555px;
-    left: 0%;
+    display: block;
+    position: absolute;
+    top: 400px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "letra";
-    font-size: 30px;
-    text-align: justify;
+    font-size: 40px;
+    z-index: 99;
+}
+
+.barraNav .centrado nav .boton #imgH3 .letraNav
+{
+    width: 100px;
+    font-family: "letra";
+    font-size: 33px;
+    color: black;
+    display: flex;
+    justify-content: left; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
 nav .barraFooter footer .letraFooter
 {
+    display: block;
     font-family: 'letra';
     font-size: 18px;
     color: black;
@@ -53,8 +67,31 @@ nav .barraFooter footer .letraFooter
 @media only screen and (max-width: 1080px)
 {
 
+    .barraNav .centrado nav .boton #imgH3 .letraNav
+    {
+        width: 100px;
+        display: none;
+        font-family: "letra";
+        font-size: 33px;
+        color: black;
+        justify-content: left; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+    }
 
-
+    nav .barraFooter footer .letraFooter
+    {
+        display: none;
+        font-family: 'letra';
+        font-size: 18px;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        position: fixed;
+        bottom: 10px;
+        right: auto;
+        left: 20px;
+        text-align: left;
+    }
 
 }
 
@@ -84,7 +121,34 @@ nav .barraFooter footer .letraFooter
         text-align: left;
     }
 
+    #main label:nth-child(3)
+    {
+        display: block;
+        position: absolute;
+        top: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "letra";
+        font-size: 35px;
+    }
 
+
+}
+
+@media only screen and (max-width: 430px)
+{
+    
+    #main label:nth-child(3)
+    {
+        display: block;
+        position: absolute;
+        top: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "letra";
+        font-size: 25px;
+    }
+    
 }
 
 @font-face

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Roboticos - Inicio</title>
+        <title>Rick y Morty - Inicio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link id="estilo" rel="stylesheet" href="../css/estiloClaro.css"/>
-        <link rel="icon" type="image/png" href="../imagenes/barraNavegacion/logoCabecera.png">
+        <link rel="icon" type="image/png" href="../imagenes/navFooter/rickextrañado.png">
         <script src="../js/efectoMaquinaDeEscribir.js"></script>
     </head>
     <body id="body">
@@ -52,7 +52,7 @@
 
                         <footer>
 
-                            <a href="#">
+                            <a href="https://www.instagram.com/gracovitz/">
                                 <div id="img">
                                     <img id="intagram" alt="contactoClaro"/>
                                 </div>
@@ -113,7 +113,9 @@
                 <div id="cajaBrillo">
 
                     <div class="interior">
-
+                        <div class="contenedor">
+                            <div class="progreso"></div>
+                        </div>
                         <div id="header">
 
                             <label>Index</label>
@@ -129,6 +131,42 @@
                             <label>Página web no oficial de Rick y Morty</label>
                             <div class="parcheVerde"></div>
                             <div class="parcheVerde"></div>
+                            <div class="centradoMain">
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Merchandising</h3>
+                                </a>
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Libros de Arte</h3>
+                                </a>
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Comics</h3>
+                                </a>
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Fondos de Pantalla</h3>
+                                </a>
+                            </div>
+                            <div class="centradoMain">
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Adult Swim</h3>
+                                </a>
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Otras Series</h3>
+                                </a>
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Dan Harmon</h3>
+                                </a>
+                                <a class="botonMain" href="">
+                                    <div class="imgMain"></div>
+                                    <h3>Justin Roiland</h3>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -142,7 +180,8 @@
 
         <script src="../js/modos.js"></script>
         <script src="../js/brillo.js"></script>
-        
+        <script src="../js/barraProgresoMain.js"></script>
+
         <script>
 
             window.onload = function () {
@@ -171,7 +210,7 @@
 
                 // Función para ajustar la opacidad en función de la escala actual
                 function adjustOpacity() {
-                    var scale = rickymortiCallendo.style.transform.match(/scale\((.*?)\)/)[1];
+                    var scale = rickymortiCallendo.style.transform.match(/scale\((.*?)\)/);
                     var opacity = scale * 0.5; // La opacidad se reduce a la mitad de la escala actual
                     rickymortiCallendo.style.opacity = opacity;
                 }
