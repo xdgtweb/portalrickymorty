@@ -64,7 +64,7 @@ body #contenido main::-webkit-scrollbar
 body #contenido main #cajaBrillo
 {
     width: 100%;
-    height: 1100px;
+    height: 1150px;
     background-color: #80dae6;
     z-index: 0;
 }
@@ -182,40 +182,32 @@ body #contenido main #cajaBrillo
     opacity: 0;
 }
 
-.centradoMain:nth-child(6)
+.centradoMain
 {
-    display: inline-flex;
+    display: inline-block;
+    width: 95%;
     position: absolute;
     top: 570px;
-    transform: translateX(-50%);
-}
-.centradoMain:nth-child(7)
-{
-    display: inline-flex;
-    position: absolute;
-    top: 805px;
     transform: translateX(-50%);
 }
 
 .botonMain
 {
-    width: 150px;
-    height: 200px;
+    display: inline-block;
+    border: 3px #b5dc36 solid;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
     background-color: #cbfffa;
     border-radius: 20px;
     z-index: 8;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .botonMain h3
 {
     display: inline-block;
-    position: absolute;
-    bottom: 10px;
-    transform: translateX(-50%);
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    top: 20px;
     font-family: "letra";
     font-size: 25px;
     color: black;
@@ -223,10 +215,10 @@ body #contenido main #cajaBrillo
 
 .centradoMain:nth-child(6) .botonMain:nth-child(1) .imgMain
 {
-    position: relative;
-    top: 5px;
-    width: 140px;
-    height: 165px;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -237,8 +229,8 @@ body #contenido main #cajaBrillo
 
 .centradoMain:nth-child(6) .botonMain:nth-child(2) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;
+    position: absolute;
     width: 140px;
     height: 165px;
     margin-left: auto;
@@ -251,8 +243,8 @@ body #contenido main #cajaBrillo
 
 .centradoMain:nth-child(6) .botonMain:nth-child(3) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;
+    position: absolute;
     width: 140px;
     height: 165px;
     margin-left: auto;
@@ -265,8 +257,8 @@ body #contenido main #cajaBrillo
 
 .centradoMain:nth-child(6) .botonMain:nth-child(4) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;
+    position: absolute;
     width: 140px;
     height: 150px;
     margin-left: auto;
@@ -277,10 +269,10 @@ body #contenido main #cajaBrillo
     background-repeat: no-repeat;
 }
 
-.centradoMain:nth-child(7) .botonMain:nth-child(1) .imgMain
+.centradoMain:nth-child(6) .botonMain:nth-child(5) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;
+    position: absolute;
     width: 140px;
     height: 165px;
     margin-left: auto;
@@ -291,10 +283,10 @@ body #contenido main #cajaBrillo
     background-repeat: no-repeat;
 }
 
-.centradoMain:nth-child(7) .botonMain:nth-child(2) .imgMain
+.centradoMain:nth-child(6) .botonMain:nth-child(6) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;
+    position: absolute;
     width: 140px;
     height: 165px;
     margin-left: auto;
@@ -305,10 +297,10 @@ body #contenido main #cajaBrillo
     background-repeat: no-repeat;
 }
 
-.centradoMain:nth-child(7) .botonMain:nth-child(3) .imgMain
+.centradoMain:nth-child(6) .botonMain:nth-child(7) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;;
+    position: absolute;
     width: 140px;
     height: 165px;
     margin-left: auto;
@@ -319,10 +311,10 @@ body #contenido main #cajaBrillo
     background-repeat: no-repeat;
 }
 
-.centradoMain:nth-child(7) .botonMain:nth-child(4) .imgMain
+.centradoMain:nth-child(6) .botonMain:nth-child(8) .imgMain
 {
-    position: relative;
-    top: 5px;
+    display: block;
+    position: absolute;
     width: 140px;
     height: 150px;
     margin-left: auto;
@@ -639,7 +631,7 @@ body #contenido main #cajaBrillo
             background-repeat: no-repeat;
         }
 
-        .centradoMain:nth-child(7) .botonMain:nth-child(1) .imgMain
+        .centradoMain:nth-child(6) .botonMain:nth-child(5) .imgMain
             {
             position: relative;
             top: 5px;
@@ -653,7 +645,7 @@ body #contenido main #cajaBrillo
             background-repeat: no-repeat;
         }
 
-        .centradoMain:nth-child(7) .botonMain:nth-child(2) .imgMain
+        .centradoMain:nth-child(6) .botonMain:nth-child(6) .imgMain
             {
             position: relative;
             top: 5px;
@@ -667,7 +659,7 @@ body #contenido main #cajaBrillo
             background-repeat: no-repeat;
         }
 
-        .centradoMain:nth-child(7) .botonMain:nth-child(3) .imgMain
+        .centradoMain:nth-child(6) .botonMain:nth-child(7) .imgMain
             {
             position: relative;
             top: 5px;
@@ -681,7 +673,7 @@ body #contenido main #cajaBrillo
             background-repeat: no-repeat;
         }
 
-        .centradoMain:nth-child(7) .botonMain:nth-child(4) .imgMain
+        .centradoMain:nth-child(6) .botonMain:nth-child(8) .imgMain
             {
             position: relative;
             top: 5px;
