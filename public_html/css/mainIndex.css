@@ -133,17 +133,17 @@ body #contenido main #cajaBrillo
     height: 27px;
     position: absolute;
     background-color: #b5dc36;
-    top: 315px;
+    top: 365px;
     z-index: 0;
 }
 
-#main .parcheVerde:nth-last-child(4)
+#main .parcheVerde:nth-last-child(2)
 {
     width: 27px;
     height: 27px;
     position: absolute;
     background-color: #b5dc36;
-    top: 315px;
+    top: 365px;
     right: 0px;
     z-index: 0;
 }
@@ -187,7 +187,7 @@ body #contenido main #cajaBrillo
     display: inline-block;
     width: 95%;
     position: absolute;
-    top: 570px;
+    top: 560px;
     transform: translateX(-50%);
 }
 
@@ -206,129 +206,192 @@ body #contenido main #cajaBrillo
 .botonMain h3
 {
     display: inline-block;
-    position: relative;
-    top: 20px;
+    position: absolute;
+    transform: translateX(-50%);
     font-family: "letra";
-    font-size: 25px;
+    font-size: 28px;
+    margin-top: 220px;
     color: black;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(1) .imgMain
+.centradoMain .botonMain:nth-child(1) .imgMain
 {
     display: block;
     position: absolute;
-    width: 100px;
-    height: 150px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/merchandising.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(2) .imgMain
+.centradoMain .botonMain:nth-child(2) .imgMain
 {
     display: block;
     position: absolute;
-    width: 140px;
-    height: 165px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/librosArte.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(3) .imgMain
+.centradoMain .botonMain:nth-child(3) .imgMain
 {
     display: block;
     position: absolute;
-    width: 140px;
-    height: 165px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/comics.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(4) .imgMain
+.centradoMain .botonMain:nth-child(4) .imgMain
 {
     display: block;
     position: absolute;
-    width: 140px;
-    height: 150px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/fondosPantalla.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(5) .imgMain
+.centradoMain .botonMain:nth-child(5) .imgMain
 {
     display: block;
     position: absolute;
-    width: 140px;
-    height: 165px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/adultswim.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(6) .imgMain
+.centradoMain .botonMain:nth-child(6) .imgMain
 {
     display: block;
     position: absolute;
-    width: 140px;
-    height: 165px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/OtrasSeries.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-.centradoMain:nth-child(6) .botonMain:nth-child(7) .imgMain
-{
-    display: block;;
-    position: absolute;
-    width: 140px;
-    height: 165px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    background-image: url("../imagenes/main/Index/webDanHarmon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.centradoMain:nth-child(6) .botonMain:nth-child(8) .imgMain
+.centradoMain .botonMain:nth-child(7) .imgMain
 {
     display: block;
     position: absolute;
-    width: 140px;
-    height: 150px;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-image: url("../imagenes/main/Index/webDanHarmon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.centradoMain .botonMain:nth-child(8) .imgMain
+{
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    transform: translateX(10px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 15px;
     background-image: url("../imagenes/main/Index/webJustinRoiland.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #b5dc36;
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.centradoMain .botonMain:hover > .imgMain {
+    transition: 0.5s;
+    background-color: transparent;
+    background-blend-mode: none;
+    opacity: 1;
 }
 
 
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 1228px)
 {
 
+    body #contenido main #cajaBrillo
+    {
+        width: 100%;
+        height: 1450px;
+        background-color: #80dae6;
+        z-index: 0;
+    }
 
 
 }
@@ -354,27 +417,21 @@ body #contenido main #cajaBrillo
         transition: background-image 0.5s ease-in-out;
     }
 
-    .centradoMain:nth-child(6)
-    {
-        display: inline-flex;
-        position: absolute;
-        top: 480px;
-        transform: translateX(-50%);
-    }
-    .centradoMain:nth-child(7)
-    {
-        display: inline-flex;
-        position: absolute;
-        top: 715px;
-        transform: translateX(-50%);
-    }
-
     body #contenido main #cajaBrillo
     {
         width: 100%;
-        height: 1000px;
+        height: 1400px;
         background-color: #80dae6;
         z-index: 0;
+    }
+
+    .centradoMain
+    {
+        display: inline-block;
+        width: 95%;
+        position: absolute;
+        top: 480px;
+        transform: translateX(-50%);
     }
 
     #main label:nth-child(3)
@@ -388,6 +445,27 @@ body #contenido main #cajaBrillo
         font-size: 40px;
         z-index: 99;
 
+    }
+
+    #main .parcheVerde:nth-last-child(3)
+    {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        background-color: #b5dc36;
+        top: 315px;
+        z-index: 0;
+    }
+
+    #main .parcheVerde:nth-last-child(2)
+    {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        background-color: #b5dc36;
+        top: 315px;
+        right: 0px;
+        z-index: 0;
     }
 
     @media only screen and (max-width: 900px)
@@ -430,7 +508,7 @@ body #contenido main #cajaBrillo
             z-index: 0;
         }
 
-        #main .parcheVerde:nth-last-child(4)
+        #main .parcheVerde:nth-last-child(2)
             {
             width: 27px;
             height: 27px;
@@ -460,6 +538,15 @@ body #contenido main #cajaBrillo
             font-size: 40px;
             z-index: 99;
 
+        }
+
+        .centradoMain
+        {
+            display: inline-block;
+            width: 95%;
+            position: absolute;
+            top: 380px;
+            transform: translateX(-50%);
         }
 
     }
@@ -502,7 +589,7 @@ body #contenido main #cajaBrillo
             z-index: 0;
         }
 
-        #main .parcheVerde:nth-last-child(4)
+        #main .parcheVerde:nth-last-child(2)
             {
             position: absolute;
             background-color: #b5dc36;
@@ -514,7 +601,7 @@ body #contenido main #cajaBrillo
         body #contenido main #cajaBrillo
         {
             width: 100%;
-            height: 900px;
+            height: 1600px;
             background-color: #80dae6;
             z-index: 0;
         }
@@ -532,159 +619,15 @@ body #contenido main #cajaBrillo
         }
     }
 
-    @media only screen and (max-width: 895px)
+    @media only screen and (max-width: 900px)
     {
 
-        .centradoMain:nth-child(6)
-            {
-            display: inline-flex;
-            position: absolute;
-            top: 370px;
-            transform: translateX(-50%);
-        }
-
-        .centradoMain:nth-child(7)
-            {
-            display: inline-flex;
-            position: absolute;
-            top: 555px;
-            transform: translateX(-50%);
-        }
-
-        .botonMain
+        body #contenido main #cajaBrillo
         {
-            width: 120px;
-            height: 160px;
-            background-color: #cbfffa;
-            border-radius: 20px;
-            z-index: 8;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        .botonMain h3
-        {
-            display: inline-block;
-            position: absolute;
-            bottom: 10px;
-            transform: translateX(-50%);
-            margin-left: auto;
-            margin-right: auto;
-            font-family: "letra";
-            font-size: 20px;
-            color: black;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(1) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 127px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/merchandising.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(2) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 127px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/librosArte.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(3) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 127px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/comics.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(4) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 117px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/fondosPantalla.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(5) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 127px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/adultswim.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(6) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 127px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/OtrasSeries.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(7) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 127px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/webDanHarmon.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .centradoMain:nth-child(6) .botonMain:nth-child(8) .imgMain
-            {
-            position: relative;
-            top: 5px;
-            width: 110px;
-            height: 117px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 20px;
-            background-image: url("../imagenes/main/Index/webJustinRoiland.png");
-            background-size: cover;
-            background-repeat: no-repeat;
+            width: 100%;
+            height: 1300px;
+            background-color: #80dae6;
+            z-index: 0;
         }
 
     }
@@ -699,33 +642,32 @@ body #contenido main #cajaBrillo
             padding-bottom: 10px;
         }
 
-        .centradoMain:nth-child(6)
-            {
-            display: inline-flex;
-            position: absolute;
-            top: 370px;
-            transform: translateX(-50%);
-        }
-
-        .centradoMain:nth-child(7)
-            {
-            display: inline-flex;
-            position: absolute;
-            top: 555px;
-            transform: translateX(-50%);
-        }
-
     }
 
-    @media only screen and (max-width: 580px)
+    @media only screen and (max-width: 883px)
     {
 
-        #main label:nth-child(3)
+        body #contenido main #cajaBrillo
         {
-
-            font-size: 30px;
-
+            width: 100%;
+            height: 1550px;
+            background-color: #80dae6;
+            z-index: 0;
         }
 
     }
+
+    @media only screen and (max-width: 506px)
+    {
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 2650px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+    }
+
 }
