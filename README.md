@@ -1,3 +1,2 @@
 # portalrickymorty
-
-https://xdgtweb.github.io/portalrickymorty/public_html/html/inicio.html
+[Link](https://xdgtweb.github.io/portalrickymorty/public_html/html/inicio.html)
