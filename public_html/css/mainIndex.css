@@ -214,7 +214,7 @@ body #contenido main #cajaBrillo
     color: black;
 }
 
-.centradoMain .botonMain:nth-child(1) .imgMain
+.centradoMain .botonMain .imgMain
 {
     display: block;
     position: absolute;
@@ -225,153 +225,52 @@ body #contenido main #cajaBrillo
     margin-right: auto;
     margin-top: 10px;
     border-radius: 15px;
-    background-image: url("../imagenes/main/Index/merchandising.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #b5dc36;
     background-blend-mode: multiply;
     opacity: 0.8;
     transition: 0.5s;
+}
+
+.centradoMain .botonMain:nth-child(1) .imgMain
+{
+    background-image: url("../imagenes/main/Index/merchandising.jpg");
 }
 
 .centradoMain .botonMain:nth-child(2) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/librosArte.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:nth-child(3) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/comics.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:nth-child(4) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/fondosPantalla.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:nth-child(5) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/adultswim.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:nth-child(6) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/OtrasSeries.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:nth-child(7) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/webDanHarmon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:nth-child(8) .imgMain
 {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    transform: translateX(10px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 15px;
     background-image: url("../imagenes/main/Index/webJustinRoiland.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #b5dc36;
-    background-blend-mode: multiply;
-    opacity: 0.8;
-    transition: 0.5s;
 }
 
 .centradoMain .botonMain:hover > .imgMain {
@@ -549,6 +448,65 @@ body #contenido main #cajaBrillo
             transform: translateX(-50%);
         }
 
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 860px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+        .centradoMain
+        {
+            display: inline-block;
+            width: 95%;
+            position: absolute;
+            top: 370px;
+            transform: translateX(-50%);
+        }
+
+        .botonMain
+        {
+            display: inline-block;
+            border: 3px #b5dc36 solid;
+            width: 140px;
+            height: 180px;
+            margin: 10px;
+            background-color: #cbfffa;
+            border-radius: 20px;
+            z-index: 8;
+        }
+
+        .botonMain h3
+        {
+            display: inline-block;
+            position: absolute;
+            transform: translateX(-50%);
+            font-family: "letra";
+            font-size: 18px;
+            margin-top: 160px;
+            color: black;
+        }
+
+        .centradoMain .botonMain .imgMain
+        {
+            display: block;
+            position: absolute;
+            width: 120px;
+            height: 140px;
+            transform: translateX(10px);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            border-radius: 15px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #b5dc36;
+            background-blend-mode: multiply;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
     }
 
     @media only screen and (max-width: 720px)
@@ -619,19 +577,6 @@ body #contenido main #cajaBrillo
         }
     }
 
-    @media only screen and (max-width: 900px)
-    {
-
-        body #contenido main #cajaBrillo
-        {
-            width: 100%;
-            height: 1300px;
-            background-color: #80dae6;
-            z-index: 0;
-        }
-
-    }
-
     @media only screen and (max-width: 720px)
     {
         body #contenido
@@ -650,20 +595,72 @@ body #contenido main #cajaBrillo
         body #contenido main #cajaBrillo
         {
             width: 100%;
-            height: 1550px;
+            height: 860px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+    }
+    
+    @media only screen and (max-width: 864px)
+    {
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 1050px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+    }
+    
+    @media only screen and (max-width: 850px)
+    {
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 1050px;
             background-color: #80dae6;
             z-index: 0;
         }
 
     }
 
-    @media only screen and (max-width: 506px)
+    @media only screen and (max-width: 550px)
     {
 
         body #contenido main #cajaBrillo
         {
             width: 100%;
-            height: 2650px;
+            height: 1250px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+    }
+    
+    @media only screen and (max-width: 505px)
+    {
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 1260px;
+            background-color: #80dae6;
+            z-index: 0;
+        }
+
+    }
+    
+    @media only screen and (max-width: 376px)
+    {
+
+        body #contenido main #cajaBrillo
+        {
+            width: 100%;
+            height: 2100px;
             background-color: #80dae6;
             z-index: 0;
         }
